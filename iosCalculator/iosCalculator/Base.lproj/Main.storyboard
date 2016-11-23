@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HMb-At-CF0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RomeRock-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iosCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nZV-4x-8m5">
+                                <rect key="frame" x="16" y="114" width="343" height="242.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Result Background" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAG-y1-oqM">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9cP-ls-Qlf">
+                                        <rect key="frame" x="0.0" y="20.5" width="343" height="29"/>
+                                        <segments>
+                                            <segment title="Red"/>
+                                            <segment title="Blue"/>
+                                            <segment title="Yellow"/>
+                                            <segment title="Green"/>
+                                            <segment title="Gray"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Number Background" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sny-rC-3fR">
+                                        <rect key="frame" x="0.0" y="48.5" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cJW-AX-WdV">
+                                        <rect key="frame" x="0.0" y="69" width="343" height="29"/>
+                                        <segments>
+                                            <segment title="Red"/>
+                                            <segment title="Blue"/>
+                                            <segment title="Yellow"/>
+                                            <segment title="Green"/>
+                                            <segment title="Gray"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Operations Background" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhZ-Gp-ASG">
+                                        <rect key="frame" x="0.0" y="97" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XKi-F6-Aav">
+                                        <rect key="frame" x="0.0" y="117.5" width="343" height="29"/>
+                                        <segments>
+                                            <segment title="Red"/>
+                                            <segment title="Blue"/>
+                                            <segment title="Yellow"/>
+                                            <segment title="Green"/>
+                                            <segment title="Gray"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Functions Background" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6go-Mg-gTq">
+                                        <rect key="frame" x="0.0" y="145.5" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="T8O-n8-38N">
+                                        <rect key="frame" x="0.0" y="166" width="343" height="29"/>
+                                        <segments>
+                                            <segment title="Red"/>
+                                            <segment title="Blue"/>
+                                            <segment title="Yellow"/>
+                                            <segment title="Green"/>
+                                            <segment title="Gray"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd1-Zg-BqD">
+                                        <rect key="frame" x="0.0" y="194" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="siG-3B-D42">
+                                        <rect key="frame" x="0.0" y="214.5" width="343" height="29"/>
+                                        <segments>
+                                            <segment title="Red"/>
+                                            <segment title="Blue"/>
+                                            <segment title="Yellow"/>
+                                            <segment title="Green"/>
+                                            <segment title="Gray"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="S8r-uQ-Qv0">
+                                <rect key="frame" x="127" y="627" width="120" height="18"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Rr-vm-o3Y">
+                                <rect key="frame" x="255" y="625" width="22" height="22"/>
+                                <connections>
+                                    <segue destination="hzD-ay-0yZ" kind="show" id="Y7D-qz-q1B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGg-DI-ZbD">
+                                <rect key="frame" x="164" y="364" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="optionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYS-cI-hiG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Rr-vm-o3Y" secondAttribute="bottom" constant="20" id="3wn-Wh-Jdj"/>
+                            <constraint firstItem="8Rr-vm-o3Y" firstAttribute="leading" secondItem="S8r-uQ-Qv0" secondAttribute="trailing" constant="8" symbolic="YES" id="CgG-EU-Q3a"/>
+                            <constraint firstItem="8Rr-vm-o3Y" firstAttribute="centerY" secondItem="S8r-uQ-Qv0" secondAttribute="centerY" id="Inm-So-fGL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Rr-vm-o3Y" secondAttribute="trailing" constant="82" id="KYw-VX-hAk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S8r-uQ-Qv0" secondAttribute="bottom" constant="22" id="VuA-Ve-qfo"/>
+                            <constraint firstItem="nZV-4x-8m5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WWM-Vt-Ky0"/>
+                            <constraint firstItem="nZV-4x-8m5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="g8a-XB-plf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nZV-4x-8m5" secondAttribute="trailing" id="pjI-Gc-Raa"/>
+                            <constraint firstItem="nZV-4x-8m5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="vER-hU-XpJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="RomeRock" id="zWX-yp-IOa"/>
+                    <connections>
+                        <outlet property="button" destination="SGg-DI-ZbD" id="Sfn-1Z-tZF"/>
+                        <outlet property="colorFunctionsBackgroundSC" destination="T8O-n8-38N" id="A8c-d1-StC"/>
+                        <outlet property="colorNumberBackgroundSC" destination="9cP-ls-Qlf" id="Ecl-3X-JzA"/>
+                        <outlet property="colorOperationsBackgroundSC" destination="XKi-F6-Aav" id="85b-ie-PBo"/>
+                        <outlet property="colorPanelBackgroundSC" destination="siG-3B-D42" id="EJV-rR-YEf"/>
+                        <outlet property="colorTextSC" destination="cJW-AX-WdV" id="oZI-mf-jml"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="155.17241379310346"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x3H-rx-ClT">
+            <objects>
+                <navigationController id="HMb-At-CF0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rdw-x9-jhH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PhY-gn-an3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxs-iY-o0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-694" y="155"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="fG1-KG-DDH">
+            <objects>
+                <viewController id="hzD-ay-0yZ" customClass="WebViewController" customModule="iosCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Und-Md-dcI"/>
+                        <viewControllerLayoutGuide type="bottom" id="wqJ-BB-ba4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4ZT-Nk-8Wb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z6e-wZ-R0Q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="z6e-wZ-R0Q" id="iUz-W8-3MB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="REw-cc-uOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896.79999999999995" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="120" height="18"/>
+    </resources>
+</document>
