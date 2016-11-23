@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FE247141DE62056003B4431 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE247121DE62056003B4431 /* Crashlytics.framework */; };
+		3FE247151DE62056003B4431 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE247131DE62056003B4431 /* Fabric.framework */; };
 		5D32F8341DE6043600597BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D32F8331DE6043600597BEC /* AppDelegate.swift */; };
 		5D32F8361DE6043600597BEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D32F8351DE6043600597BEC /* ViewController.swift */; };
 		5D32F8391DE6043600597BEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D32F8371DE6043600597BEC /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FE247121DE62056003B4431 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		3FE247131DE62056003B4431 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		5D32F8301DE6043600597BEC /* iosCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D32F8331DE6043600597BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D32F8351DE6043600597BEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE247141DE62056003B4431 /* Crashlytics.framework in Frameworks */,
+				3FE247151DE62056003B4431 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 		5D32F8271DE6043500597BEC = {
 			isa = PBXGroup;
 			children = (
+				3FE247121DE62056003B4431 /* Crashlytics.framework */,
+				3FE247131DE62056003B4431 /* Fabric.framework */,
 				5D32F8321DE6043600597BEC /* iosCalculator */,
 				5D32F8311DE6043600597BEC /* Products */,
 			);
@@ -99,6 +107,7 @@
 				5D32F82C1DE6043600597BEC /* Sources */,
 				5D32F82D1DE6043600597BEC /* Frameworks */,
 				5D32F82E1DE6043600597BEC /* Resources */,
+				3FE247161DE620AA003B4431 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -156,6 +165,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FE247161DE620AA003B4431 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/Fabric.framework/run\" 86fe069ba50b0e638135e385737ebb6a3a748338 d3c2257bc7068a694cb5cfb2e4180035da34b00b7c2443ed849298fd3c170331";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D32F82C1DE6043600597BEC /* Sources */ = {
@@ -288,6 +313,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iosCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.romerock.modules.iOS.tinycalculator;
@@ -300,6 +329,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iosCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.romerock.modules.iOS.tinycalculator;
@@ -327,6 +360,7 @@
 				5D32F8441DE6043600597BEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
