@@ -1,6 +1,6 @@
 # ios-calculator
 iOS customizable simple calculator module.
-This is a simple module for a calculator, make the basic aritmetic operation: (*, /, +, -)
+This is a simple module for a calculator, make the basic arithmetic operations: (*, /, +, -)
 
 ## Installation
 Download the repository and just copy these two files
@@ -18,7 +18,7 @@ You can set the colors for the Calculator Layout, as you can see in the sample c
 let calculator = Bundle.main.loadNibNamed("CalculatorView", owner: nil, options: nil)?[0] as! CalculatorView
 ```
 
-then you can call the different methods 
+then you can call the different methods to customize the layout
 
 ```swift
 //set the background color for the Numbers layout 
