@@ -130,6 +130,7 @@
 				TargetAttributes = {
 					5D32F82F1DE6043600597BEC = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = M637AR755M;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -313,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M637AR755M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -329,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M637AR755M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
