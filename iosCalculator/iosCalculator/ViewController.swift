@@ -8,18 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
-    @IBOutlet var colorNumberBackgroundSC: UISegmentedControl!
-    @IBOutlet var colorTextSC: UISegmentedControl!
-    @IBOutlet var colorOperationsBackgroundSC: UISegmentedControl!
-    @IBOutlet var colorFunctionsBackgroundSC: UISegmentedControl!
-    @IBOutlet var colorPanelBackgroundSC: UISegmentedControl!
-    @IBOutlet var button: UIButton!
+    @IBOutlet var menuItem: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        if self.revealViewController() != nil {
+            menuItem.target = self.revealViewController()
+            menuItem.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            self.revealViewController().panGestureRecognizer().delegate = self
+        }
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -27,19 +28,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func optionButtonPressed(_ sender: Any) {
+    @IBAction func openButtonPressed(_ sender: Any) {
+        let calculatorViewController:UIViewController = UIViewController()
         let customView = Bundle.main.loadNibNamed("CalculatorView", owner: nil, options: nil)?[0] as! CalculatorView
         
-        let colors = [UIColor.red, UIColor.blue, UIColor.yellow, UIColor.green, UIColor.gray]
-        customView.setNumbersColor(color: colors[colorTextSC.selectedSegmentIndex])
-        customView.setOperationsColor(color: colors[colorOperationsBackgroundSC.selectedSegmentIndex])
-        customView.setResultsColor(color: colors[colorNumberBackgroundSC.selectedSegmentIndex])
-        customView.setOtherButtonsColor(color: colors[colorFunctionsBackgroundSC.selectedSegmentIndex])
-        customView.setPanelTextColor(color: colors[colorPanelBackgroundSC.selectedSegmentIndex])
+        calculatorViewController.view = customView
         
-        customView.addView(view: self.view)
+        customView.viewController = calculatorViewController
+        
+        calculatorViewController.modalPresentationStyle = .overFullScreen
+        calculatorViewController.modalTransitionStyle = .crossDissolve
+        present(calculatorViewController, animated: true, completion: nil)
     }
-
+    
 
 }
 

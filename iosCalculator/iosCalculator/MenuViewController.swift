@@ -1,23 +1,19 @@
 //
-//  WebViewController.swift
-//  iosCalculator
+//  MenuViewController.swift
+//  SchemaColor
 //
-//  Created by Rome Rock on 11/18/16.
-//  Copyright © 2016 Rome Rock. All rights reserved.
+//  Created by NDM on 2/25/17.
+//  Copyright © 2017 Rome Rock. All rights reserved.
 //
 
 import UIKit
 
-class WebViewController: UIViewController {
+class MenuViewController: UIViewController {
 
-    @IBOutlet var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let url = NSURL (string: "http://romerock.com");
-        let requestObj = NSURLRequest(url: url! as URL);
-        webView.loadRequest(requestObj as URLRequest)
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +21,18 @@ class WebViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func facebookButtonPressed(_ sender: Any) {
+        UIApplication.shared.open(URL(string:"https://www.facebook.com/337180269970605")!)
+    }
 
+    @IBAction func twitterButtonPressed(_ sender: Any) {
+        UIApplication.shared.open(URL(string:"https://twitter.com/RomeRock_Apps")!)
+    }
+    
+    @IBAction func githubButtonPressed(_ sender: Any) {
+        UIApplication.shared.open(URL(string:"https://github.com/RomeRock")!)
+    }
+    
     /*
     // MARK: - Navigation
 

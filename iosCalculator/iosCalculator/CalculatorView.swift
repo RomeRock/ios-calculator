@@ -13,6 +13,8 @@ public class CalculatorView: UIView {
     // MARK: Properties
     
     
+    @IBOutlet var contentView: UIStackView!
+    @IBOutlet var topView: UIView!
     
     @IBOutlet var historyLabel: UILabel!
     @IBOutlet var resultLabel: UILabel!
@@ -36,11 +38,17 @@ public class CalculatorView: UIView {
     @IBOutlet var productButton: UIButton!
     @IBOutlet var divideButton: UIButton!
     
+    var viewController:UIViewController!
+    
     let operationCharacters = ["-", "+", "/", "*"]
     
     override public func awakeFromNib() {
         super.awakeFromNib()
-        
+        //topView.roundCorners(corners: [.topRight, .topLeft], radius: 3.0)
+        //topView.roundCorners(corners: [.topRight], radius: 3.0)
+        //equalButton.roundCorners(corners: [.bottomRight], radius: 3.0)
+        //zeroButton.roundCorners(corners: [.bottomLeft], radius: 3.0)
+        //icTipImageView.image =  icTipImageView.image?.imageWithColor(color1: UIColor(hex: "FFFFFF")).withRenderingMode(.alwaysOriginal)
     }
     
     // MARK: Set UI Colors
@@ -193,15 +201,30 @@ public class CalculatorView: UIView {
     }
     
     @IBAction func okButtonPressed(_ sender: Any) {
-        UIView.animate(withDuration: 0.25, animations: {
+        /*UIView.animate(withDuration: 0.25, animations: {
             self.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
             self.alpha = 0.0;
         }, completion:{(finished : Bool)  in
             if (finished)
             {
                 self.removeFromSuperview()
+                self.viewController.dismiss(animated: false, completion: nil)
             }
-        });
+        });*/
+        self.viewController.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func closeButtonPressed(_ sender: Any) {
+        self.viewController.dismiss(animated: true, completion: nil)
+    }
+    
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch:UITouch? = touches.first
+        let touchLocation = touch?.location(in: self)
+        let contentViewFrame = self.convert(contentView.frame, from: contentView.superview)
+        if !contentViewFrame.contains(touchLocation!) {
+            self.viewController.dismiss(animated: true, completion: nil)
+        }
+        
     }
     
     // MARK: Helper Methods
