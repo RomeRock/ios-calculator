@@ -15,7 +15,12 @@ public class CalculatorView: UIView {
     
     @IBOutlet var contentView: UIStackView!
     @IBOutlet var topView: UIView!
+    @IBOutlet var divisorView: UIView!
     
+    @IBOutlet var closeButton: UIButton!
+    @IBOutlet var zeroBackgroundView: UIView!
+    @IBOutlet var displayBackgroundView: UIView!
+    @IBOutlet var equalBackgroundView: UIView!
     @IBOutlet var historyLabel: UILabel!
     @IBOutlet var resultLabel: UILabel!
     @IBOutlet var clearButton: UIButton!
@@ -44,14 +49,72 @@ public class CalculatorView: UIView {
     
     override public func awakeFromNib() {
         super.awakeFromNib()
-        //topView.roundCorners(corners: [.topRight, .topLeft], radius: 3.0)
-        //topView.roundCorners(corners: [.topRight], radius: 3.0)
-        //equalButton.roundCorners(corners: [.bottomRight], radius: 3.0)
-        //zeroButton.roundCorners(corners: [.bottomLeft], radius: 3.0)
-        //icTipImageView.image =  icTipImageView.image?.imageWithColor(color1: UIColor(hex: "FFFFFF")).withRenderingMode(.alwaysOriginal)
+        
     }
     
     // MARK: Set UI Colors
+    
+    public func setPrimaryColor(color:UIColor) {
+        minusButton.backgroundColor = color
+        plusButton.backgroundColor = color
+        productButton.backgroundColor = color
+        divideButton.backgroundColor = color
+        equalBackgroundView.backgroundColor = color
+        divisorView.backgroundColor = color
+    }
+    
+    public func setSecondaryColor(color:UIColor) {
+        okButton.setTitleColor(color, for: UIControlState.normal)
+        topView.backgroundColor = color
+    }
+
+    public func setPrimaryTextColor(color:UIColor) {
+        sevenButton.setTitleColor(color, for: UIControlState.normal)
+        eightButton.setTitleColor(color, for: UIControlState.normal)
+        nineButton.setTitleColor(color, for: UIControlState.normal)
+        fourButton.setTitleColor(color, for: UIControlState.normal)
+        fiveButton.setTitleColor(color, for: UIControlState.normal)
+        sixButton.setTitleColor(color, for: UIControlState.normal)
+        oneButton.setTitleColor(color, for: UIControlState.normal)
+        twoButton.setTitleColor(color, for: UIControlState.normal)
+        threeButton.setTitleColor(color, for: UIControlState.normal)
+        zeroButton.setTitleColor(color, for: UIControlState.normal)
+        pointButton.setTitleColor(color, for: UIControlState.normal)
+        resultLabel.textColor = color
+        
+        let image = UIImage(named: "btn_delete")
+        backButton.setImage(image?.maskWithColor(color: color), for: .normal)
+        clearButton.setTitleColor(color, for: .normal)
+    }
+    
+    public func setPanelColor(color:UIColor) {
+        pointButton.backgroundColor = color
+        zeroBackgroundView.backgroundColor = color
+        oneButton.backgroundColor = color
+        twoButton.backgroundColor = color
+        threeButton.backgroundColor = color
+        fourButton.backgroundColor = color
+        fiveButton.backgroundColor = color
+        sixButton.backgroundColor = color
+        sevenButton.backgroundColor = color
+        eightButton.backgroundColor = color
+        nineButton.backgroundColor = color
+        displayBackgroundView.backgroundColor = color
+        okButton.backgroundColor = color
+        clearButton.backgroundColor = color
+        backButton.backgroundColor = color
+        
+        divideButton.setTitleColor(color, for: UIControlState.normal)
+        productButton.setTitleColor(color, for: UIControlState.normal)
+        plusButton.setTitleColor(color, for: UIControlState.normal)
+        minusButton.setTitleColor(color, for: UIControlState.normal)
+        equalButton.setTitleColor(color, for: UIControlState.normal)
+        
+        let image = UIImage(named: "btn_close")
+        closeButton.setImage(image?.maskWithColor(color: color), for: .normal)
+    }
+    
+    /*
     
     public func setNumbersColor(color:UIColor) {
         pointButton.backgroundColor = color
@@ -73,6 +136,7 @@ public class CalculatorView: UIView {
         plusButton.backgroundColor = color
         productButton.backgroundColor = color
         divideButton.backgroundColor = color
+        divisorView.backgroundColor = color
     }
     
     public func setResultsColor(color: UIColor) {
@@ -107,7 +171,7 @@ public class CalculatorView: UIView {
         equalButton.setTitleColor(color, for: UIControlState.normal)
         okButton.setTitleColor(color, for: UIControlState.normal)
     }
-    
+    */
     // MARK: Button Actions
     
     @IBAction func clearButtonPressed(_ sender: Any) {

@@ -30,11 +30,17 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBAction func openButtonPressed(_ sender: Any) {
         let calculatorViewController:UIViewController = UIViewController()
-        let customView = Bundle.main.loadNibNamed("CalculatorView", owner: nil, options: nil)?[0] as! CalculatorView
+        let calculatorView = Bundle.main.loadNibNamed("CalculatorView", owner: nil, options: nil)?[0] as! CalculatorView
         
-        calculatorViewController.view = customView
+        //custom Color
+        //calculatorView.setPrimaryColor(color: UIColor(hex: "EF4517"))
+        //calculatorView.setSecondaryColor(color: UIColor(hex: "C33109"))
+        //calculatorView.setPanelColor(color: .red)
+        calculatorView.setPrimaryTextColor(color: .red)
         
-        customView.viewController = calculatorViewController
+        calculatorViewController.view = calculatorView
+        
+        calculatorView.viewController = calculatorViewController
         
         calculatorViewController.modalPresentationStyle = .overFullScreen
         calculatorViewController.modalTransitionStyle = .crossDissolve

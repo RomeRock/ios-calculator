@@ -15,44 +15,58 @@ And paste to your project
 You can set the colors for the Calculator Layout, as you can see in the sample code, you create an object and load the nib
 
 ```swift
-let calculator = Bundle.main.loadNibNamed("CalculatorView", owner: nil, options: nil)?[0] as! CalculatorView
+//Create a container (UIViewController)
+let calculatorViewController:UIViewController = UIViewController()
+//Load the Calculator View
+let calculatorView = Bundle.main.loadNibNamed("CalculatorView", owner: nil, options: nil)?[0] as! CalculatorView
+
+//set the Colors
+
+
+//Add the Calculator View to the Container(UIViewController)
+calculatorViewController.view = calculatorView
+
+//Set the Container
+calculatorView.viewController = calculatorViewController
+        
+//Set the transition for the UIViewController
+calculatorViewController.modalPresentationStyle = .overFullScreen
+calculatorViewController.modalTransitionStyle = .crossDissolve
+
+//Present the View
+present(calculatorViewController, animated: true, completion: nil)
 ```
 
-then you can call the different methods to customize the layout
+then you can call the different methods to customize the layout, we also add a really cool extention, so you can create a UIColor object from the hex code of the desire color.
 
 ```swift
-//set the background color for the Numbers layout 
-calculator.setNumbersColor(color: UIColor.red)
+//set the background color for the Operations Buttons  
+calculatorView.setPrimaryColor(color: UIColor(hex: "EF4517"))
 ```
-[![Simulator Screen Shot Nov 28, 2016, 12.35.39 PM.png](https://s18.postimg.org/aqxcklc7t/Simulator_Screen_Shot_Nov_28_2016_12_35_39_PM.png)](https://postimg.org/image/6uk0olr85/)
+
+[![Simulator Screen Shot Feb 27, 2017, 5.27.35 PM.png](https://s27.postimg.org/e16zizz5v/Simulator_Screen_Shot_Feb_27_2017_5_27_35_PM.png)](https://postimg.org/image/a4tnn0e67/)
 
 ```swift
-//set the background color for the Operations layout 
-calculator.setOperationsColor(color: UIColor.red)
+//set the background color for the top view and the text color for the ok button 
+calculatorView.setSecondaryColor(color: UIColor(hex: "C33109"))
 ```
 
-[![Simulator Screen Shot Nov 28, 2016, 12.38.43 PM.png](https://s14.postimg.org/my0u4tn7l/Simulator_Screen_Shot_Nov_28_2016_12_38_43_PM.png)](https://postimg.org/image/yzw7yywfx/)
+[![Simulator Screen Shot Feb 27, 2017, 5.31.03 PM.png](https://s1.postimg.org/lm8d0zgi7/Simulator_Screen_Shot_Feb_27_2017_5_31_03_PM.png)](https://postimg.org/image/5b894o40b/)
 
 ```swift
-//set the background color for the Results layout 
-calculator.setResultsColor(color: UIColor.red)
+//set the background color for the Results layout, the numbers layout, the text color for the operation buttons, and the close button
+calculatorView.setPanelColor(color: .red)
 ```
 
-[![Simulator Screen Shot Nov 28, 2016, 12.40.38 PM.png](https://s12.postimg.org/u6m25jpwt/Simulator_Screen_Shot_Nov_28_2016_12_40_38_PM.png)](https://postimg.org/image/jwjn6b015/)
+[![Simulator Screen Shot Feb 27, 2017, 5.37.01 PM.png](https://s8.postimg.org/4r55cyrbp/Simulator_Screen_Shot_Feb_27_2017_5_37_01_PM.png)](https://postimg.org/image/cwn7b4fkh/)
 
 ```swift
-//set the background color for the Clear, Back and equals layout 
-calculator.setOtherButtonsColor(color: UIColor.red)
+//set the text color for the numbers layout, clear and back button and history label
+calculatorView.setPrimaryTextColor(color: .red)
 ```
 
-[![Simulator Screen Shot Nov 28, 2016, 12.44.21 PM.png](https://s21.postimg.org/gw7efix5z/Simulator_Screen_Shot_Nov_28_2016_12_44_21_PM.png)](https://postimg.org/image/jqajsyzc3/)
+[![Simulator Screen Shot Feb 27, 2017, 5.38.09 PM.png](https://s1.postimg.org/c9265assf/Simulator_Screen_Shot_Feb_27_2017_5_38_09_PM.png)](https://postimg.org/image/ah97ae9ff/)
 
-```swift
-//set the text color for all the buttons 
-calculator.setPanelTextColor(color: UIColor.red)
-```
-
-[![Simulator Screen Shot Nov 28, 2016, 12.46.13 PM.png](https://s16.postimg.org/7xtrqbr2d/Simulator_Screen_Shot_Nov_28_2016_12_46_13_PM.png)](https://postimg.org/image/fqkfiax1d/)
 
 ## License
 

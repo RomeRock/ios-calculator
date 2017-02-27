@@ -18,7 +18,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CalculatorView" customModule="iosCalculator" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CalculatorView" customModule="Calculator" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -60,7 +60,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3L-en-IfK">
                                             <rect key="frame" x="0.0" y="37.666666666666671" width="315.33333333333337" height="60.666666666666657"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                             <color key="textColor" red="0.011764705882352941" green="0.011764705882352941" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -84,7 +84,7 @@
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tqR-s4-5fI">
                                             <rect key="frame" x="0.0" y="0.0" width="315.33333333333337" height="37.666666666666671"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <color key="textColor" red="0.57647058823529407" green="0.57647058823529407" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -409,9 +409,13 @@
             <connections>
                 <outlet property="backButton" destination="zwq-rO-Ggu" id="7Mv-Nf-jdv"/>
                 <outlet property="clearButton" destination="IuN-xm-WFE" id="ZjV-HX-oXa"/>
+                <outlet property="closeButton" destination="1M9-fb-qYS" id="x2R-n1-yKv"/>
                 <outlet property="contentView" destination="KS2-BM-O8B" id="dMT-tB-nUR"/>
+                <outlet property="displayBackgroundView" destination="Lls-65-NCt" id="NXc-0K-voR"/>
                 <outlet property="divideButton" destination="xAN-fq-aOl" id="uKj-dx-3Eg"/>
+                <outlet property="divisorView" destination="4Kl-DD-GJy" id="cOR-y7-HyR"/>
                 <outlet property="eightButton" destination="kMz-dw-Rbi" id="JxT-x1-duI"/>
+                <outlet property="equalBackgroundView" destination="y7c-GV-yxC" id="Xct-9C-um5"/>
                 <outlet property="equalButton" destination="DTD-JY-9dL" id="vbC-tE-P2P"/>
                 <outlet property="fiveButton" destination="vFS-xD-vtg" id="VRr-Y2-pU8"/>
                 <outlet property="fourButton" destination="kB0-8N-HdW" id="Ih9-v8-s0L"/>
@@ -427,8 +431,9 @@
                 <outlet property="sevenButton" destination="KIJ-bT-Vkw" id="IIM-LP-B5v"/>
                 <outlet property="sixButton" destination="ajO-oh-rcn" id="Djh-uz-9go"/>
                 <outlet property="threeButton" destination="Yia-mX-hkq" id="1bc-NF-RRq"/>
-                <outlet property="topView" destination="CxW-LN-Qcx" id="ANM-Vo-DON"/>
+                <outlet property="topView" destination="8EY-I8-4H2" id="D1k-Is-ra8"/>
                 <outlet property="twoButton" destination="H2H-0X-n9C" id="r9p-lV-v7f"/>
+                <outlet property="zeroBackgroundView" destination="bGp-7E-mzR" id="tJI-0V-dzH"/>
                 <outlet property="zeroButton" destination="oR9-gZ-ejx" id="CRg-F8-ajg"/>
             </connections>
             <point key="canvasLocation" x="-34.5" y="14.5"/>
