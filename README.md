@@ -2,6 +2,8 @@
 iOS customizable simple calculator module.
 This is a simple module for a calculator, make the basic arithmetic operations: (*, /, +, -)
 
+[![Simulator Screen Shot Feb 27, 2017, 5.44.53 PM.png](https://s10.postimg.org/d34o66rjd/Simulator_Screen_Shot_Feb_27_2017_5_44_53_PM.png)](https://postimg.org/image/qwt0v8k4l/)
+
 ## Installation
 Download the repository and just copy these two files
 

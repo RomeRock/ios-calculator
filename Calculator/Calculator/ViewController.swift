@@ -32,12 +32,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         let calculatorViewController:UIViewController = UIViewController()
         let calculatorView = Bundle.main.loadNibNamed("CalculatorView", owner: nil, options: nil)?[0] as! CalculatorView
         
-        //custom Color
-        //calculatorView.setPrimaryColor(color: UIColor(hex: "EF4517"))
-        //calculatorView.setSecondaryColor(color: UIColor(hex: "C33109"))
-        //calculatorView.setPanelColor(color: .red)
-        calculatorView.setPrimaryTextColor(color: .red)
-        
         calculatorViewController.view = calculatorView
         
         calculatorView.viewController = calculatorViewController
