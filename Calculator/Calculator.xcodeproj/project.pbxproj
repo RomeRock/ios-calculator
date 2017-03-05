@@ -329,6 +329,7 @@
 				5D0C97051E64D54500BFE448 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
