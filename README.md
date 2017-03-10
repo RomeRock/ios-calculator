@@ -1,3 +1,5 @@
+[![mm_header.jpg](https://s16.postimg.org/674mqlohx/mm_header.jpg)](https://postimg.org/image/dzvaikugx/)
+
 # ios-calculator
 iOS customizable simple calculator module.
 This is a simple module for a calculator, make the basic arithmetic operations: (*, /, +, -)
