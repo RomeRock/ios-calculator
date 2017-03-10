@@ -45,28 +45,28 @@ then you can call the different methods to customize the layout, we also add a r
 
 ```swift
 //set the background color for the Operations Buttons  
-calculatorView.setPrimaryColor(color: UIColor(hex: "EF4517"))
+calculatorView.setPrimaryColor(color: UIColor(hex: "F49F0A"))
 ```
 
 [![Simulator Screen Shot Mar 9, 2017, 9.50.53 PM.png](https://s14.postimg.org/vhadtsv8x/Simulator_Screen_Shot_Mar_9_2017_9_50_53_PM.png)](https://postimg.org/image/5yi1gsbot/)
 
 ```swift
 //set the background color for the top view and the text color for the ok button 
-calculatorView.setSecondaryColor(color: UIColor(hex: "C33109"))
+calculatorView.setSecondaryColor(color: UIColor(hex: "F49F0A"))
 ```
 
 [![Simulator Screen Shot Mar 9, 2017, 9.51.29 PM.png](https://s1.postimg.org/5d91450f3/Simulator_Screen_Shot_Mar_9_2017_9_51_29_PM.png)](https://postimg.org/image/pkmgwfxwb/)
 
 ```swift
 //set the background color for the Results layout, the numbers layout, the text color for the operation buttons, and the close button
-calculatorView.setPanelColor(color: .red)
+calculatorView.setPanelColor(color: UIColor(hex: "DFD8D8"))
 ```
 
 [![Simulator Screen Shot Mar 9, 2017, 9.52.11 PM.png](https://s10.postimg.org/e50nnr1s9/Simulator_Screen_Shot_Mar_9_2017_9_52_11_PM.png)](https://postimg.org/image/rlxm6mc3p/)
 
 ```swift
 //set the text color for the numbers layout, clear and back button and history label
-calculatorView.setPrimaryTextColor(color: .red)
+calculatorView.setPrimaryTextColor(color: UIColor(hex: "00598A"))
 ```
 
 [![Simulator Screen Shot Mar 9, 2017, 9.52.55 PM.png](https://s7.postimg.org/ugq9fk5jf/Simulator_Screen_Shot_Mar_9_2017_9_52_55_PM.png)](https://postimg.org/image/4xxx2jlzb/)
