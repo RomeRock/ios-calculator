@@ -14,7 +14,7 @@ Download the repository and just copy these two files
 
 And paste to your project
 
-## Customitazion
+## Customization
 
 You can set the colors for the Calculator Layout, as you can see in the sample code, you create an object and load the nib
 
@@ -48,28 +48,28 @@ then you can call the different methods to customize the layout, we also add a r
 calculatorView.setPrimaryColor(color: UIColor(hex: "EF4517"))
 ```
 
-[![Simulator Screen Shot Feb 27, 2017, 5.27.35 PM.png](https://s27.postimg.org/e16zizz5v/Simulator_Screen_Shot_Feb_27_2017_5_27_35_PM.png)](https://postimg.org/image/a4tnn0e67/)
+[![Simulator Screen Shot Mar 9, 2017, 9.50.53 PM.png](https://s14.postimg.org/vhadtsv8x/Simulator_Screen_Shot_Mar_9_2017_9_50_53_PM.png)](https://postimg.org/image/5yi1gsbot/)
 
 ```swift
 //set the background color for the top view and the text color for the ok button 
 calculatorView.setSecondaryColor(color: UIColor(hex: "C33109"))
 ```
 
-[![Simulator Screen Shot Feb 27, 2017, 5.31.03 PM.png](https://s1.postimg.org/lm8d0zgi7/Simulator_Screen_Shot_Feb_27_2017_5_31_03_PM.png)](https://postimg.org/image/5b894o40b/)
+[![Simulator Screen Shot Mar 9, 2017, 9.51.29 PM.png](https://s1.postimg.org/5d91450f3/Simulator_Screen_Shot_Mar_9_2017_9_51_29_PM.png)](https://postimg.org/image/pkmgwfxwb/)
 
 ```swift
 //set the background color for the Results layout, the numbers layout, the text color for the operation buttons, and the close button
 calculatorView.setPanelColor(color: .red)
 ```
 
-[![Simulator Screen Shot Feb 27, 2017, 5.37.01 PM.png](https://s8.postimg.org/4r55cyrbp/Simulator_Screen_Shot_Feb_27_2017_5_37_01_PM.png)](https://postimg.org/image/cwn7b4fkh/)
+[![Simulator Screen Shot Mar 9, 2017, 9.52.11 PM.png](https://s10.postimg.org/e50nnr1s9/Simulator_Screen_Shot_Mar_9_2017_9_52_11_PM.png)](https://postimg.org/image/rlxm6mc3p/)
 
 ```swift
 //set the text color for the numbers layout, clear and back button and history label
 calculatorView.setPrimaryTextColor(color: .red)
 ```
 
-[![Simulator Screen Shot Feb 27, 2017, 5.38.09 PM.png](https://s1.postimg.org/c9265assf/Simulator_Screen_Shot_Feb_27_2017_5_38_09_PM.png)](https://postimg.org/image/ah97ae9ff/)
+[![Simulator Screen Shot Mar 9, 2017, 9.52.55 PM.png](https://s7.postimg.org/ugq9fk5jf/Simulator_Screen_Shot_Mar_9_2017_9_52_55_PM.png)](https://postimg.org/image/4xxx2jlzb/)
 
 
 ## License
